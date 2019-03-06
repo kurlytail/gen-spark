@@ -1,0 +1,34 @@
+<%
+    const packageBaseDir = extension('pom-group-id')[0].replace(/\./, '/') + '/' +
+            lodash.kebabCase(extension('pom-artifact-id')[0]).replace(/-/, '/');
+    let context = {
+        packageBaseDir : packageBaseDir
+    };
+
+    Object.assign(context, {
+        packageName: context.packageBaseDir.replace(/\//g, '.')
+    });
+%>
+
+<%
+    _.each(design.MasterCell, (cell, key) => {
+        if(!cell.name.endsWith('StreamProcessor')) return;
+        const className = lodash.upperFirst(lodash.camelCase(cell.name));
+%>
+    "src/test/java/<%=context.packageBaseDir%>/<%=className%>Test.java" : {
+        "template": "src/test/java/spark-stream-processor-test.java._",
+        "context" : <%=JSON.stringify(Object.assign({}, context, {
+            className : className,
+            key: key
+        }))%>
+    },
+    "src/main/java/<%=context.packageBaseDir%>/<%=className%>.java" : {
+        "template": "src/main/java/spark-stream-processor.java._",
+        "context" : <%=JSON.stringify(Object.assign({}, context, {
+            className : className,
+            key: key
+        }))%>
+    },
+<%
+    });
+%>

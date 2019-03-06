@@ -1,4 +1,5 @@
 {
+    <%=extension('gen-spark-map-json.*').filter(v => v.trim() != '').join(',')%>
     ".prettierrc": {
         "template": ".prettierrc._"
     }

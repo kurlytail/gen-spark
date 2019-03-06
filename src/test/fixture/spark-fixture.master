@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:flow="http://www.brainspeedtech.com/swarm/flow" xmlns:master="http://www.brainspeedtech.com/swarm/master" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <notation:Diagram xmi:id="_NK-YYD-ZEem8SNk6IO9AgQ" type="Master" element="_NK-YYj-ZEem8SNk6IO9AgQ" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_NK-YYT-ZEem8SNk6IO9AgQ"/>
+  </notation:Diagram>
+  <master:MasterDesign xmi:id="_NK-YYj-ZEem8SNk6IO9AgQ" name="spark-fixture">
+    <cell xmi:type="master:MasterCell" xmi:id="_PyeJoD-aEem8SNk6IO9AgQ" input="_Eg61gj-dEem8SNk6IO9AgQ" count="1" external="false" internalName="master_cell_ConsoleSink" name="ConsoleSink">
+      <designCells xmi:type="flow:Cell" href="flow1.flow#_glt50D-ZEem8SNk6IO9AgQ"/>
+    </cell>
+    <cell xmi:type="master:MasterCell" xmi:id="_HzVI0D-aEem8SNk6IO9AgQ" input="_Eg61gz-dEem8SNk6IO9AgQ" output="_Eg61gT-dEem8SNk6IO9AgQ" count="1" external="false" internalName="master_cell_FileSource" name="FileSource">
+      <designCells xmi:type="flow:Cell" href="flow1.flow#_aYwBQD-ZEem8SNk6IO9AgQ"/>
+    </cell>
+    <cell xmi:type="master:MasterCell" xmi:id="_EcKYsD-aEem8SNk6IO9AgQ" output="_Eg61gz-dEem8SNk6IO9AgQ" count="1" external="false" internalName="master_cell_Path" name="Path">
+      <designCells xmi:type="flow:Cell" href="flow1.flow#_BHxPwD-aEem8SNk6IO9AgQ"/>
+    </cell>
+    <cell xmi:type="master:MasterCell" xmi:id="_Eg61gD-dEem8SNk6IO9AgQ" input="_Eg61gT-dEem8SNk6IO9AgQ" output="_Eg61gj-dEem8SNk6IO9AgQ" count="1" external="false" internalName="master_cell_TestStreamProcessor" name="TestStreamProcessor">
+      <designCells xmi:type="flow:Cell" href="flow1.flow#_cGIJED-ZEem8SNk6IO9AgQ"/>
+    </cell>
+    <tube xmi:type="master:MasterTube" xmi:id="_Eg61gT-dEem8SNk6IO9AgQ" from="_HzVI0D-aEem8SNk6IO9AgQ" internalName="FileSource-TestInput-TestStreamProcessor" name="TestInput" to="_Eg61gD-dEem8SNk6IO9AgQ">
+      <designTubes xmi:type="flow:Tube" href="flow1.flow#_jamcQD-ZEem8SNk6IO9AgQ"/>
+    </tube>
+    <tube xmi:type="master:MasterTube" xmi:id="_Eg61gj-dEem8SNk6IO9AgQ" from="_Eg61gD-dEem8SNk6IO9AgQ" internalName="TestStreamProcessor-TestOutput-ConsoleSink" name="TestOutput" to="_PyeJoD-aEem8SNk6IO9AgQ">
+      <designTubes xmi:type="flow:Tube" href="flow1.flow#_teC3ID-ZEem8SNk6IO9AgQ"/>
+    </tube>
+    <tube xmi:type="master:MasterTube" xmi:id="_Eg61gz-dEem8SNk6IO9AgQ" from="_EcKYsD-aEem8SNk6IO9AgQ" internalName="Path-src/test/fixture/sampleData*-FileSource" name="src/test/fixture/sampleData*" to="_HzVI0D-aEem8SNk6IO9AgQ">
+      <designTubes xmi:type="flow:Tube" href="flow1.flow#_CP4HUD-aEem8SNk6IO9AgQ"/>
+    </tube>
+  </master:MasterDesign>
+</xmi:XMI>

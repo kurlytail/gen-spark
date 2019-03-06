@@ -1,0 +1,16 @@
+package <%=context.packageName%>;
+<%
+    const cells = design.MasterCell[context.key].designCells;
+%>
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+class <%=context.className%>Test {
+
+    @Test
+    void test<%=context.className%>() throws Exception {
+        fail("Not yet implemented");
+    }
+
+}

@@ -1,72 +1,196 @@
 {
-    "_ODsP4AviEemswplt4kY5KA": {
-        "clazz": "Tube",
-        "name": "cella_cellb",
-        "descriptor": [],
-        "from": "_BFc30AviEemswplt4kY5KA",
-        "to": "_MiaqYAviEemswplt4kY5KA"
-    },
-    "_8sJVQgvhEemswplt4kY5KA": {
-        "clazz": "MasterDesign",
-        "name": "fixture",
-        "cell": ["master_cell_cella", "master_cell_cellb"],
-        "tube": ["master_tube_cella_cellb"]
-    },
-    "master_tube_cella_cellb": {
-        "clazz": "MasterTube",
-        "internalName": "master_tube_cella_cellb",
-        "name": "cella_cellb",
-        "designTubes": ["_ODsP4AviEemswplt4kY5KA"],
-        "from": "master_cell_cella",
-        "to": "master_cell_cellb"
-    },
-    "master_cell_cella": {
-        "clazz": "MasterCell",
-        "count": 1,
-        "external": false,
-        "internalName": "master_cell_cella",
-        "name": "cella",
-        "pinned": false,
-        "input": [],
-        "output": ["master_tube_cella_cellb"],
-        "designCells": ["_BFc30AviEemswplt4kY5KA"]
-    },
-    "_MiaqYAviEemswplt4kY5KA": {
-        "clazz": "Cell",
-        "count": 1,
-        "external": false,
-        "name": "cellb",
-        "input": ["_ODsP4AviEemswplt4kY5KA"],
-        "output": []
-    },
-    "_8pBv0AvhEemswplt4kY5KA": {
-        "clazz": "Layer",
-        "name": "swarm",
-        "constraint": []
-    },
-    "master_cell_cellb": {
-        "clazz": "MasterCell",
-        "count": 1,
-        "external": false,
-        "internalName": "master_cell_cellb",
-        "name": "cellb",
-        "pinned": false,
-        "input": ["master_tube_cella_cellb"],
-        "output": [],
-        "designCells": ["_MiaqYAviEemswplt4kY5KA"]
-    },
-    "_AhnK8AviEemswplt4kY5KA": {
-        "clazz": "Flow",
-        "name": "default",
-        "cell": ["_BFc30AviEemswplt4kY5KA", "_MiaqYAviEemswplt4kY5KA"],
-        "tube": ["_ODsP4AviEemswplt4kY5KA"]
-    },
-    "_BFc30AviEemswplt4kY5KA": {
-        "clazz": "Cell",
-        "count": 1,
-        "external": false,
-        "name": "cella",
-        "input": [],
-        "output": ["_ODsP4AviEemswplt4kY5KA"]
-    }
+  "FileSource-TestInput-TestStreamProcessor": {
+    "clazz": "MasterTube",
+    "internalName": "FileSource-TestInput-TestStreamProcessor",
+    "name": "TestInput",
+    "designTubes": [
+      "_jamcQD-ZEem8SNk6IO9AgQ"
+    ],
+    "from": "master_cell_FileSource",
+    "to": "master_cell_TestStreamProcessor"
+  },
+  "TestStreamProcessor-TestOutput-ConsoleSink": {
+    "clazz": "MasterTube",
+    "internalName": "TestStreamProcessor-TestOutput-ConsoleSink",
+    "name": "TestOutput",
+    "designTubes": [
+      "_teC3ID-ZEem8SNk6IO9AgQ"
+    ],
+    "from": "master_cell_TestStreamProcessor",
+    "to": "master_cell_ConsoleSink"
+  },
+  "master_cell_ConsoleSink": {
+    "clazz": "MasterCell",
+    "count": 1,
+    "external": false,
+    "internalName": "master_cell_ConsoleSink",
+    "name": "ConsoleSink",
+    "pinned": false,
+    "input": [
+      "TestStreamProcessor-TestOutput-ConsoleSink"
+    ],
+    "output": [],
+    "designCells": [
+      "_glt50D-ZEem8SNk6IO9AgQ"
+    ]
+  },
+  "_jamcQD-ZEem8SNk6IO9AgQ": {
+    "clazz": "Tube",
+    "name": "TestInput",
+    "descriptor": [],
+    "from": "_aYwBQD-ZEem8SNk6IO9AgQ",
+    "to": "_cGIJED-ZEem8SNk6IO9AgQ"
+  },
+  "master_cell_Path": {
+    "clazz": "MasterCell",
+    "count": 1,
+    "external": false,
+    "internalName": "master_cell_Path",
+    "name": "Path",
+    "pinned": false,
+    "input": [],
+    "output": [
+      "Path-src/test/fixture/sampleData*-FileSource"
+    ],
+    "designCells": [
+      "_BHxPwD-aEem8SNk6IO9AgQ"
+    ]
+  },
+  "master_cell_TestStreamProcessor": {
+    "clazz": "MasterCell",
+    "count": 1,
+    "external": false,
+    "internalName": "master_cell_TestStreamProcessor",
+    "name": "TestStreamProcessor",
+    "pinned": false,
+    "input": [
+      "FileSource-TestInput-TestStreamProcessor"
+    ],
+    "output": [
+      "TestStreamProcessor-TestOutput-ConsoleSink"
+    ],
+    "designCells": [
+      "_cGIJED-ZEem8SNk6IO9AgQ"
+    ]
+  },
+  "_ZYNxUD-ZEem8SNk6IO9AgQ": {
+    "clazz": "Flow",
+    "name": "flow1",
+    "cell": [
+      "_aYwBQD-ZEem8SNk6IO9AgQ",
+      "_cGIJED-ZEem8SNk6IO9AgQ",
+      "_glt50D-ZEem8SNk6IO9AgQ",
+      "_BHxPwD-aEem8SNk6IO9AgQ"
+    ],
+    "tube": [
+      "_jamcQD-ZEem8SNk6IO9AgQ",
+      "_teC3ID-ZEem8SNk6IO9AgQ",
+      "_CP4HUD-aEem8SNk6IO9AgQ"
+    ]
+  },
+  "_aYwBQD-ZEem8SNk6IO9AgQ": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "FileSource",
+    "input": [
+      "_CP4HUD-aEem8SNk6IO9AgQ"
+    ],
+    "output": [
+      "_jamcQD-ZEem8SNk6IO9AgQ"
+    ]
+  },
+  "_cGIJED-ZEem8SNk6IO9AgQ": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "TestStreamProcessor",
+    "input": [
+      "_jamcQD-ZEem8SNk6IO9AgQ"
+    ],
+    "output": [
+      "_teC3ID-ZEem8SNk6IO9AgQ"
+    ]
+  },
+  "_NK-YYj-ZEem8SNk6IO9AgQ": {
+    "clazz": "MasterDesign",
+    "name": "spark-fixture",
+    "cell": [
+      "master_cell_ConsoleSink",
+      "master_cell_FileSource",
+      "master_cell_Path",
+      "master_cell_TestStreamProcessor"
+    ],
+    "tube": [
+      "FileSource-TestInput-TestStreamProcessor",
+      "TestStreamProcessor-TestOutput-ConsoleSink",
+      "Path-src/test/fixture/sampleData*-FileSource"
+    ]
+  },
+  "master_cell_FileSource": {
+    "clazz": "MasterCell",
+    "count": 1,
+    "external": false,
+    "internalName": "master_cell_FileSource",
+    "name": "FileSource",
+    "pinned": false,
+    "input": [
+      "Path-src/test/fixture/sampleData*-FileSource"
+    ],
+    "output": [
+      "FileSource-TestInput-TestStreamProcessor"
+    ],
+    "designCells": [
+      "_aYwBQD-ZEem8SNk6IO9AgQ"
+    ]
+  },
+  "Path-src/test/fixture/sampleData*-FileSource": {
+    "clazz": "MasterTube",
+    "internalName": "Path-src/test/fixture/sampleData*-FileSource",
+    "name": "src/test/fixture/sampleData*",
+    "designTubes": [
+      "_CP4HUD-aEem8SNk6IO9AgQ"
+    ],
+    "from": "master_cell_Path",
+    "to": "master_cell_FileSource"
+  },
+  "_glt50D-ZEem8SNk6IO9AgQ": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "ConsoleSink",
+    "input": [
+      "_teC3ID-ZEem8SNk6IO9AgQ"
+    ],
+    "output": []
+  },
+  "_teC3ID-ZEem8SNk6IO9AgQ": {
+    "clazz": "Tube",
+    "name": "TestOutput",
+    "descriptor": [],
+    "from": "_cGIJED-ZEem8SNk6IO9AgQ",
+    "to": "_glt50D-ZEem8SNk6IO9AgQ"
+  },
+  "_CP4HUD-aEem8SNk6IO9AgQ": {
+    "clazz": "Tube",
+    "name": "src/test/fixture/sampleData*",
+    "descriptor": [],
+    "from": "_BHxPwD-aEem8SNk6IO9AgQ",
+    "to": "_aYwBQD-ZEem8SNk6IO9AgQ"
+  },
+  "_MqyccD-ZEem8SNk6IO9AgQ": {
+    "clazz": "Layer",
+    "name": "swarm",
+    "constraint": []
+  },
+  "_BHxPwD-aEem8SNk6IO9AgQ": {
+    "clazz": "Cell",
+    "count": 1,
+    "external": false,
+    "name": "Path",
+    "input": [],
+    "output": [
+      "_CP4HUD-aEem8SNk6IO9AgQ"
+    ]
+  }
 }

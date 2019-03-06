@@ -27,6 +27,16 @@ describe('# integration test', () => {
         expect(output).toMatchSnapshot();
         output = execSync('npm install', { cwd: 'testoutput' }).toString();
         output = execSync('npm run lint', { cwd: 'testoutput' }).toString();
-        output = execSync('mvn package', { cwd: 'testoutput' }).toString();
+        output = execSync('mvn compile', { cwd: 'testoutput' }).toString();
+    });
+
+    it('## should generate design and run spark commands with gcs connector', () => {
+        let output = execSync(
+            './scripts/sgen-spark.sh -d src/test/fixture/design.json -e templates/addons/gcp -o testoutput'
+        ).toString();
+        expect(output).toMatchSnapshot();
+        output = execSync('npm install', { cwd: 'testoutput' }).toString();
+        output = execSync('npm run lint', { cwd: 'testoutput' }).toString();
+        output = execSync('mvn compile', { cwd: 'testoutput' }).toString();
     });
 });
