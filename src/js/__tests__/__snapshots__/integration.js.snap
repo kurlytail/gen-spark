@@ -15,18 +15,19 @@ info: Generated testoutput/src/test/java/.gitkeep from template node_modules/@ku
 info: Generated testoutput/src/test/resources/.gitkeep from template node_modules/@kurlytail/gen-pom/templates/src/test/resources/.gitkeep._
 info: Generated testoutput/src/test/java/com/brainspeedtech/spark/fixture/TestStreamProcessorTest.java from template templates/src/test/java/spark-stream-processor-test.java._
 info: Generated testoutput/src/main/java/com/brainspeedtech/spark/fixture/TestStreamProcessor.java from template templates/src/main/java/spark-stream-processor.java._
+info: Generated testoutput/src/main/java/com/brainspeedtech/spark/fixture/SparkFixtureApplication.java from template templates/src/main/java/spark-application.java._
 info: Generated testoutput/.classpath from template node_modules/@kurlytail/gen-pom/templates/.classpath._
 info: Generated testoutput/.project from template node_modules/@kurlytail/gen-pom/templates/.project._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-model-version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-name._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-description._
-info: loading extension templates/extensions/pom-property-spark-core.version._
+info: loading extension templates/extensions/pom-property-spark.version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-property-maven-surefire-plugin.version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-property-junit-platform.version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-property-junit-jupiter.version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-property-java.version._
-info: loading extension templates/extensions/pom-dependencies-spark-core._
+info: loading extension templates/extensions/pom-dependencies-spark._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-dependencies-junit-jupiter.dependency._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
@@ -62,18 +63,19 @@ info: Generated testoutput/src/test/java/.gitkeep from template node_modules/@ku
 info: Generated testoutput/src/test/resources/.gitkeep from template node_modules/@kurlytail/gen-pom/templates/src/test/resources/.gitkeep._
 info: Generated testoutput/src/test/java/com/brainspeedtech/spark/fixture/TestStreamProcessorTest.java from template templates/src/test/java/spark-stream-processor-test.java._
 info: Generated testoutput/src/main/java/com/brainspeedtech/spark/fixture/TestStreamProcessor.java from template templates/src/main/java/spark-stream-processor.java._
+info: Generated testoutput/src/main/java/com/brainspeedtech/spark/fixture/SparkFixtureApplication.java from template templates/src/main/java/spark-application.java._
 info: Generated testoutput/.classpath from template node_modules/@kurlytail/gen-pom/templates/.classpath._
 info: Generated testoutput/.project from template node_modules/@kurlytail/gen-pom/templates/.project._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-model-version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-name._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-description._
-info: loading extension templates/extensions/pom-property-spark-core.version._
+info: loading extension templates/extensions/pom-property-spark.version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-property-maven-surefire-plugin.version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-property-junit-platform.version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-property-junit-jupiter.version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-property-java.version._
-info: loading extension templates/extensions/pom-dependencies-spark-core._
+info: loading extension templates/extensions/pom-dependencies-spark._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-dependencies-junit-jupiter.dependency._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
@@ -109,6 +111,7 @@ info: Generated testoutput/src/test/java/.gitkeep from template node_modules/@ku
 info: Generated testoutput/src/test/resources/.gitkeep from template node_modules/@kurlytail/gen-pom/templates/src/test/resources/.gitkeep._
 info: Generated testoutput/src/test/java/com/brainspeedtech/spark/fixture/TestStreamProcessorTest.java from template templates/src/test/java/spark-stream-processor-test.java._
 info: Generated testoutput/src/main/java/com/brainspeedtech/spark/fixture/TestStreamProcessor.java from template templates/src/main/java/spark-stream-processor.java._
+info: Generated testoutput/src/main/java/com/brainspeedtech/spark/fixture/SparkFixtureApplication.java from template templates/src/main/java/spark-application.java._
 info: Generated testoutput/.classpath from template node_modules/@kurlytail/gen-pom/templates/.classpath._
 info: Generated testoutput/.project from template node_modules/@kurlytail/gen-pom/templates/.project._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-model-version._
@@ -116,13 +119,13 @@ info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-name._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-description._
 info: loading extension templates/addons/gcp/pom-property-gcs-connector.version._
-info: loading extension templates/extensions/pom-property-spark-core.version._
+info: loading extension templates/extensions/pom-property-spark.version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-property-maven-surefire-plugin.version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-property-junit-platform.version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-property-junit-jupiter.version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-property-java.version._
 info: loading extension templates/addons/gcp/pom-dependencies-gcs-connector._
-info: loading extension templates/extensions/pom-dependencies-spark-core._
+info: loading extension templates/extensions/pom-dependencies-spark._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-dependencies-junit-jupiter.dependency._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
@@ -158,18 +161,19 @@ info: Generated testoutput/src/test/java/.gitkeep from template node_modules/@ku
 info: Generated testoutput/src/test/resources/.gitkeep from template node_modules/@kurlytail/gen-pom/templates/src/test/resources/.gitkeep._
 info: Generated testoutput/src/test/java/com/brainspeedtech/spark/fixture/TestStreamProcessorTest.java from template templates/src/test/java/spark-stream-processor-test.java._
 info: Generated testoutput/src/main/java/com/brainspeedtech/spark/fixture/TestStreamProcessor.java from template templates/src/main/java/spark-stream-processor.java._
+info: Generated testoutput/src/main/java/com/brainspeedtech/spark/fixture/SparkFixtureApplication.java from template templates/src/main/java/spark-application.java._
 info: Generated testoutput/.classpath from template node_modules/@kurlytail/gen-pom/templates/.classpath._
 info: Generated testoutput/.project from template node_modules/@kurlytail/gen-pom/templates/.project._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-model-version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-name._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-description._
-info: loading extension templates/extensions/pom-property-spark-core.version._
+info: loading extension templates/extensions/pom-property-spark.version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-property-maven-surefire-plugin.version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-property-junit-platform.version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-property-junit-jupiter.version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-property-java.version._
-info: loading extension templates/extensions/pom-dependencies-spark-core._
+info: loading extension templates/extensions/pom-dependencies-spark._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-dependencies-junit-jupiter.dependency._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-dependencies-junit-jupiter-api.dependency._
@@ -208,18 +212,19 @@ info: Generated testoutput/src/test/java/.gitkeep from template node_modules/@ku
 info: Generated testoutput/src/test/resources/.gitkeep from template node_modules/@kurlytail/gen-pom/templates/src/test/resources/.gitkeep._
 info: Generated testoutput/src/test/java/com/brainspeedtech/spark/fixture/TestStreamProcessorTest.java from template templates/src/test/java/spark-stream-processor-test.java._
 info: Generated testoutput/src/main/java/com/brainspeedtech/spark/fixture/TestStreamProcessor.java from template templates/src/main/java/spark-stream-processor.java._
+info: Generated testoutput/src/main/java/com/brainspeedtech/spark/fixture/SparkFixtureApplication.java from template templates/src/main/java/spark-application.java._
 info: Generated testoutput/.classpath from template node_modules/@kurlytail/gen-pom/templates/.classpath._
 info: Generated testoutput/.project from template node_modules/@kurlytail/gen-pom/templates/.project._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-model-version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-name._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-description._
-info: loading extension templates/extensions/pom-property-spark-core.version._
+info: loading extension templates/extensions/pom-property-spark.version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-property-maven-surefire-plugin.version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-property-junit-platform.version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-property-junit-jupiter.version._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-property-java.version._
-info: loading extension templates/extensions/pom-dependencies-spark-core._
+info: loading extension templates/extensions/pom-dependencies-spark._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-dependencies-junit-jupiter.dependency._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-dependencies-junit-jupiter-engine.dependency._
 info: loading extension node_modules/@kurlytail/gen-pom/templates/extensions/pom-dependencies-junit-jupiter-api.dependency._

@@ -1,0 +1,9 @@
+package <%=context.packageName%>;
+
+import org.apache.spark.sql.SparkSession;
+
+class <%=context.className%>Application {
+    public static void Main(String[] args) {
+        SparkSession spark = SparkSession.builder().appName("<%=context.className%>").getOrCreate();
+    }
+}

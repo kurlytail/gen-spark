@@ -1,7 +1,4 @@
 package <%=context.packageName%>;
-<%
-    const cell = design.MasterCell[context.key];
-%>
 
 public class <%=context.className%> {
 

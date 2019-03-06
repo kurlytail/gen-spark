@@ -32,3 +32,12 @@
 <%
     });
 %>
+
+<%const sessionName = lodash.upperFirst(lodash.camelCase(design.MasterDesign[0].name));%>
+
+"src/main/java/<%=context.packageBaseDir%>/<%=sessionName%>Application.java": {
+    "template": "src/main/java/spark-application.java._",
+    "context" : <%=JSON.stringify(Object.assign({}, context, {
+        className : sessionName,
+    }))%>
+},

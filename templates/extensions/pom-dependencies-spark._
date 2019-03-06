@@ -1,0 +1,21 @@
+<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core -->
+<dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-core_${spark-variant.version}</artifactId>
+    <version>${spark.version}</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-streaming_${spark-variant.version}</artifactId>
+    <version>${spark.version}</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-streaming-kafka_${spark-variant.version}</artifactId>
+    <version>${spark-streaming-kafka.version}</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-sql_${spark-variant.version}</artifactId>
+    <version>${spark.version}</version>
+</dependency>
