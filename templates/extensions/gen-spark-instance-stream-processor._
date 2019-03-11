@@ -1,0 +1,5 @@
+<%
+    const streamProcessor = design.MasterCell.find(k => k._id === labels[-1]);
+    const streamSources = design.MasterTube.filter(t => streamProcessor == t.to);
+    const streamSinks = design.MasterTube.filter(t => streamProcessor == t.from);
+%>

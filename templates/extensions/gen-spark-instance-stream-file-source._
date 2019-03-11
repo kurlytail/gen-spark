@@ -1,0 +1,12 @@
+<%
+    const streamSource = design.MasterTube.find(t => t._id == labels.slice(-1)[0]).from;
+    const propertyTubes = streamSource.input;
+
+    const pathPropertyTube = propertyTubes.find(tube => tube.from.name === 'Path');
+%>
+
+sparkSession.readStream().format("file")
+
+<%if (pathPropertyTube) {%>
+    .option("path", "<%=pathPropertyTube.name%>")
+<%}%>

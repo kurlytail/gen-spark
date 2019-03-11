@@ -1,0 +1,11 @@
+<%
+    const streamSource = design.MasterTube.find(t => t._id == labels.slice(-1)[0]);
+    const streamVarName = lodash.lowerFirst(lodash.camelCase(streamSource.name));
+    const extensionName = `gen-spark-instance-stream-${lodash.kebabCase(streamSource.from.name)}`
+    let extensionText = extension(extensionName);
+
+    extensionText = extensionText[0] || 'null';
+    extensionText = extensionText.trim();
+    extensionText = extensionText === '' ? 'null' : extensionText;
+%>
+final DataStreamReader <%=streamVarName%> = <%=extensionText%>;

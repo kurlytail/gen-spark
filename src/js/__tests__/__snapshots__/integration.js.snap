@@ -15,6 +15,11 @@ info: Generated testoutput/src/test/java/.gitkeep from template node_modules/@ku
 info: Generated testoutput/src/test/resources/.gitkeep from template node_modules/@kurlytail/gen-pom/templates/src/test/resources/.gitkeep._
 info: Generated testoutput/src/test/java/com/brainspeedtech/spark/fixture/TestStreamProcessorTest.java from template templates/src/test/java/spark-stream-processor-test.java._
 info: Generated testoutput/src/main/java/com/brainspeedtech/spark/fixture/TestStreamProcessor.java from template templates/src/main/java/spark-stream-processor.java._
+info: loading extension templates/extensions/gen-spark-instance-processor._
+info: loading extension templates/extensions/gen-spark-instance-stream-source._
+info: loading extension templates/extensions/gen-spark-instance-stream-file-source._
+info: loading extension templates/extensions/gen-spark-instance-stream-sink._
+info: loading extension templates/extensions/gen-spark-instance-stream-processor._
 info: Generated testoutput/src/main/java/com/brainspeedtech/spark/fixture/SparkFixtureApplication.java from template templates/src/main/java/spark-application.java._
 info: Generated testoutput/.classpath from template node_modules/@kurlytail/gen-pom/templates/.classpath._
 info: Generated testoutput/.project from template node_modules/@kurlytail/gen-pom/templates/.project._
@@ -63,6 +68,11 @@ info: Generated testoutput/src/test/java/.gitkeep from template node_modules/@ku
 info: Generated testoutput/src/test/resources/.gitkeep from template node_modules/@kurlytail/gen-pom/templates/src/test/resources/.gitkeep._
 info: Generated testoutput/src/test/java/com/brainspeedtech/spark/fixture/TestStreamProcessorTest.java from template templates/src/test/java/spark-stream-processor-test.java._
 info: Generated testoutput/src/main/java/com/brainspeedtech/spark/fixture/TestStreamProcessor.java from template templates/src/main/java/spark-stream-processor.java._
+info: loading extension templates/extensions/gen-spark-instance-processor._
+info: loading extension templates/extensions/gen-spark-instance-stream-source._
+info: loading extension templates/extensions/gen-spark-instance-stream-file-source._
+info: loading extension templates/extensions/gen-spark-instance-stream-sink._
+info: loading extension templates/extensions/gen-spark-instance-stream-processor._
 info: Generated testoutput/src/main/java/com/brainspeedtech/spark/fixture/SparkFixtureApplication.java from template templates/src/main/java/spark-application.java._
 info: Generated testoutput/.classpath from template node_modules/@kurlytail/gen-pom/templates/.classpath._
 info: Generated testoutput/.project from template node_modules/@kurlytail/gen-pom/templates/.project._
@@ -111,6 +121,11 @@ info: Generated testoutput/src/test/java/.gitkeep from template node_modules/@ku
 info: Generated testoutput/src/test/resources/.gitkeep from template node_modules/@kurlytail/gen-pom/templates/src/test/resources/.gitkeep._
 info: Generated testoutput/src/test/java/com/brainspeedtech/spark/fixture/TestStreamProcessorTest.java from template templates/src/test/java/spark-stream-processor-test.java._
 info: Generated testoutput/src/main/java/com/brainspeedtech/spark/fixture/TestStreamProcessor.java from template templates/src/main/java/spark-stream-processor.java._
+info: loading extension templates/extensions/gen-spark-instance-processor._
+info: loading extension templates/extensions/gen-spark-instance-stream-source._
+info: loading extension templates/extensions/gen-spark-instance-stream-file-source._
+info: loading extension templates/extensions/gen-spark-instance-stream-sink._
+info: loading extension templates/extensions/gen-spark-instance-stream-processor._
 info: Generated testoutput/src/main/java/com/brainspeedtech/spark/fixture/SparkFixtureApplication.java from template templates/src/main/java/spark-application.java._
 info: Generated testoutput/.classpath from template node_modules/@kurlytail/gen-pom/templates/.classpath._
 info: Generated testoutput/.project from template node_modules/@kurlytail/gen-pom/templates/.project._
@@ -161,6 +176,11 @@ info: Generated testoutput/src/test/java/.gitkeep from template node_modules/@ku
 info: Generated testoutput/src/test/resources/.gitkeep from template node_modules/@kurlytail/gen-pom/templates/src/test/resources/.gitkeep._
 info: Generated testoutput/src/test/java/com/brainspeedtech/spark/fixture/TestStreamProcessorTest.java from template templates/src/test/java/spark-stream-processor-test.java._
 info: Generated testoutput/src/main/java/com/brainspeedtech/spark/fixture/TestStreamProcessor.java from template templates/src/main/java/spark-stream-processor.java._
+info: loading extension templates/extensions/gen-spark-instance-processor._
+info: loading extension templates/extensions/gen-spark-instance-stream-source._
+info: loading extension templates/extensions/gen-spark-instance-stream-file-source._
+info: loading extension templates/extensions/gen-spark-instance-stream-sink._
+info: loading extension templates/extensions/gen-spark-instance-stream-processor._
 info: Generated testoutput/src/main/java/com/brainspeedtech/spark/fixture/SparkFixtureApplication.java from template templates/src/main/java/spark-application.java._
 info: Generated testoutput/.classpath from template node_modules/@kurlytail/gen-pom/templates/.classpath._
 info: Generated testoutput/.project from template node_modules/@kurlytail/gen-pom/templates/.project._
@@ -212,6 +232,11 @@ info: Generated testoutput/src/test/java/.gitkeep from template node_modules/@ku
 info: Generated testoutput/src/test/resources/.gitkeep from template node_modules/@kurlytail/gen-pom/templates/src/test/resources/.gitkeep._
 info: Generated testoutput/src/test/java/com/brainspeedtech/spark/fixture/TestStreamProcessorTest.java from template templates/src/test/java/spark-stream-processor-test.java._
 info: Generated testoutput/src/main/java/com/brainspeedtech/spark/fixture/TestStreamProcessor.java from template templates/src/main/java/spark-stream-processor.java._
+info: loading extension templates/extensions/gen-spark-instance-processor._
+info: loading extension templates/extensions/gen-spark-instance-stream-source._
+info: loading extension templates/extensions/gen-spark-instance-stream-file-source._
+info: loading extension templates/extensions/gen-spark-instance-stream-sink._
+info: loading extension templates/extensions/gen-spark-instance-stream-processor._
 info: Generated testoutput/src/main/java/com/brainspeedtech/spark/fixture/SparkFixtureApplication.java from template templates/src/main/java/spark-application.java._
 info: Generated testoutput/.classpath from template node_modules/@kurlytail/gen-pom/templates/.classpath._
 info: Generated testoutput/.project from template node_modules/@kurlytail/gen-pom/templates/.project._
