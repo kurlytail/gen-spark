@@ -15,7 +15,9 @@ basePath = Path.relative(process.cwd(), basePath) || '.';
 const options = {
     // eslint-disable-next-line no-undef
     version: app.version,
-    map: [`${basePath}/templates/map.json`]
+    map: [`${basePath}/templates/map.json`],
+    extensions: [`${basePath}/templates/extensions`],
+    generator: ['pom']
 };
 
 export default options;
