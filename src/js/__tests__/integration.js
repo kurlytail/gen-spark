@@ -6,26 +6,18 @@ describe('# integration test', () => {
     });
 
     it('## should print help options', () => {
-        const output = execSync('./scripts/sgen-spark.sh -h').toString();
-        expect(output).toMatchSnapshot();
-    });
-
-    it('## should generate design', () => {
-        const output = execSync('./scripts/sgen-spark.sh -d src/test/fixture/design.json -o testoutput').toString();
-        expect(output).toMatchSnapshot();
-    });
-
-    it('## should generate design with merge', () => {
-        let output = execSync('./scripts/sgen-spark.sh -d src/test/fixture/design.json -o testoutput').toString();
-        expect(output).toMatchSnapshot();
-        output = execSync('./scripts/sgen-spark.sh -d src/test/fixture/design.json -o testoutput').toString();
+        let output = execSync('npm run build').toString();
+        output = execSync('sgen -g `pwd`/dist/spark.min.js -h').toString();
         expect(output).toMatchSnapshot();
     });
 
     it('## should generate design and run spark commands', () => {
-        let output = execSync('./scripts/sgen-spark.sh -d src/test/fixture/design.json -o testoutput').toString();
+        let output = execSync('npm run build').toString();
+        output = execSync('sgen -g `pwd`/dist/spark.min.js -d src/test/fixture/design.json -o testoutput').toString();
+        output = output.replace(/info: Loaded generator .*spark.min.js.*/, '');
         expect(output).toMatchSnapshot();
-        output = execSync('npm install', { cwd: 'testoutput' }).toString();
-        output = execSync('npm run lint', { cwd: 'testoutput' }).toString();
+        execSync('npm install', { cwd: 'testoutput', stdio: 'inherit' });
+        execSync('npm run lint', { cwd: 'testoutput', stdio: 'inherit' });
+        execSync('npm run build', { cwd: 'testoutput', stdio: 'inherit' });
     });
 });
